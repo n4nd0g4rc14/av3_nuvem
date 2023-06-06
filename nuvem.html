@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD com SUPABASE</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.17.0"></script>
+</head>
+<body>
+  <h1>CRUD com SUPABASE</h1>
+
+  <h2>Consultar todos os produtos</h2>
+  <button onclick="consultarProdutos()">Consultar Produtos</button>
+  <div id="produtos"></div>
+
+  <h2>Consultar produto por ID</h2>
+  <label for="produtoId">ID do Produto:</label>
+  <input type="text" id="produtoId">
+  <button onclick="consultarProduto()">Consultar Produto</button>
+  <div id="produto"></div>
+
+  <h2>Cadastrar produto</h2>
+  <label for="produtoNome">Nome do Produto:</label>
+  <input type="text" id="produtoNome">
+  <label for="produtoPreco">Preço do Produto:</label>
+  <input type="text" id="produtoPreco">
+  <button onclick="cadastrarProduto()">Cadastrar Produto</button>
+
+  <h2>Alterar produto</h2>
+  <label for="produtoIdAlterar">ID do Produto:</label>
+  <input type="text" id="produtoIdAlterar">
+  <label for="produtoNomeAlterar">Novo Nome do Produto:</label>
+  <input type="text" id="produtoNomeAlterar">
+  <label for="produtoPrecoAlterar">Novo Preço do Produto:</label>
+  <input type="text" id="produtoPrecoAlterar">
+  <button onclick="alterarProduto()">Alterar Produto</button>
+
+  <h2>Deletar produto</h2>
+  <label for="produtoIdDeletar">ID do Produto:</label>
+  <input type="text" id="produtoIdDeletar">
+  <button onclick="deletarProduto()">Deletar Produto</button>
+
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="script/client.js"></script>
+  <script src="script/aplications.js"></script>
